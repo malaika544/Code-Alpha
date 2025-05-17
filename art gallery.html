@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Art Gallery</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fce4ec; /* Soft tea pink background for body */
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #c0c0c0, #dcd6f7); /* Grey + Lavender gradient */
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #c0c0c0, #dcd6f7); /* Same gradient for navbar */
+    }
+
+    nav a {
+      color: #222;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .gallery-section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: #d8a7a7; /* Soft tea pink background for sections */
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background: linear-gradient(to bottom right, #ffffff, #ffeef3); /* light pink card */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .gallery-item h3 {
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Modern Art Gallery</h1>
+    <p>Explore the Beauty of Creative Expressions</p>
+  </header>
+
+  <nav>
+    <a href="#modern">Modern Art</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#sculpture">Sculptures</a>
+    <a href="#photography">Photography</a>
+  </nav>
+
+  <section id="modern" class="gallery-section">
+    <h2>Modern Art</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <h3>City Lights</h3>
+        <img src="images.jpg" alt="City Lights">
+      </div>
+      <div class="gallery-item">
+        <h3>Urban Jungle</h3>
+        <img src="download.jpg" alt="Urban Jungle">
+      </div>
+    </div>
+  </section>
+
+  <section id="abstract" class="gallery-section">
+    <h2>Abstract</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <h3>Color Splash</h3>
+        <img src="download (1).jpg" alt="Color Splash">
+      </div>
+      <div class="gallery-item">
+        <h3>Emotion Flow</h3>
+        <img src="download (2).jpg" alt="Emotion Flow">
+      </div>
+    </div>
+  </section>
+
+  <section id="sculpture" class="gallery-section">
+    <h2>Sculptures</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <h3>Stone Grace</h3>
+        <img src="stone.jpg" alt="Stone Grace">
+      </div>
+      <div class="gallery-item">
+        <h3>Timeless Beauty</h3>
+        <img src="timeless.jpg" alt="Timeless Beauty">
+      </div>
+    </div>
+  </section>
+
+  <section id="photography" class="gallery-section">
+    <h2>Photography</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <h3>Nature's Frame</h3>
+        <img src="natures.jpg" alt="Nature's Frame">
+      </div>
+      <div class="gallery-item">
+        <h3>Shadows & Light</h3>
+        <img src="shadows and lights.jpg" alt="Shadow & Light">
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
